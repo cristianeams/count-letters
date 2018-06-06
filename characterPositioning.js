@@ -7,11 +7,13 @@ function characterPositioning(string) {
     var currentLetter = noSpaces[i];
     //If currentLetter does not exist, it creates the property
     if (!stats[currentLetter]) {
+      //gets first ocurrence of letter based on its index
           stats[currentLetter] = i;
         } else {
+          //if letters appears in another index, added to the value
           stats[currentLetter] += ", " + i;
         }
-        //Increments instance
+
 
 
       }
